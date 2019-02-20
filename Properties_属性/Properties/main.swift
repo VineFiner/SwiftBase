@@ -274,7 +274,12 @@ print(rightChannel.currentLevel)
 print(AudioChannel.maxInputLevelForAllChannels)
 // 输出 "10"
 
+// MARK: Other Test
 
+let student = Students()
+print("student name:\(student.name)")
+student.name = "Jerry"
+print("student name:\(student.name)")
 
 
 
