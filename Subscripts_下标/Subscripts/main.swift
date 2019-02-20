@@ -31,7 +31,7 @@ print("Hello, World!")
 //}
 
 
-// 如果是自读属性，可以省略下标的get 关键字
+// 如果是只读属性，可以省略下标的get 关键字
 //subscript(index: Int) -> Int {
 //    // 返回一个适当的 Int 类型的值
 //     return 3
@@ -144,3 +144,45 @@ for row in array {
         print(index)
     }
 }
+
+print("\n\n\nThis is dynamic \n")
+// 基础使用
+//@dynamicMemberLookup
+//struct Titan {
+//    subscript(dynamicMember member: String) -> String {
+//        let properties = ["name": "Titanjun",
+//                          "city": "Hang"]
+//        return properties[member, default: "0"]
+//    }
+//}
+//
+//let titan = Titan()
+//print("name:\(titan.name) city:\(titan.city) age:\(titan.age)")
+
+
+@dynamicMemberLookup
+struct Titan {
+    subscript(dynamicMember member: String) -> String {
+        let properties = ["name": "Titanjun",
+                          "city": "Hang"]
+        return properties[member, default: "默认：0"]
+    }
+    subscript(dynamicMember member: String) -> Int {
+        let properties = ["age": 20, "source": 99]
+        return properties[member, default: 0] //默认值
+    }
+}
+// 这里需要注明取得的类型
+let titan = Titan()
+let name: String = titan.name
+let city: String = titan.city
+let age: Int = titan.age
+var jun: String = titan.jun
+
+print(jun)
+jun = "?"
+print(jun)
+print("name = \(name), city = \(city), age = \(age)")
+
+// 返回函数
+

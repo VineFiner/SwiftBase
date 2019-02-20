@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		045054612085A4A100D66C80 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045054602085A4A100D66C80 /* main.swift */; };
+		22F0830B21B4DA5500CC02DC /* Students.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F0830A21B4DA5500CC02DC /* Students.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		0450545D2085A4A100D66C80 /* Properties */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Properties; sourceTree = BUILT_PRODUCTS_DIR; };
 		045054602085A4A100D66C80 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		22F0830A21B4DA5500CC02DC /* Students.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Students.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				045054602085A4A100D66C80 /* main.swift */,
+				22F0830A21B4DA5500CC02DC /* Students.swift */,
 			);
 			path = Properties;
 			sourceTree = "<group>";
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					0450545C2085A4A100D66C80 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -120,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				045054612085A4A100D66C80 /* main.swift in Sources */,
+				22F0830B21B4DA5500CC02DC /* Students.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +250,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N3PJA24574;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -255,7 +260,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N3PJA24574;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

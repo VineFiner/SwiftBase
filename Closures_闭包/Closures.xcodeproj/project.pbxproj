@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0408CE452084449C003391D5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408CE442084449C003391D5 /* main.swift */; };
+		22E52DD521B533950017BF90 /* StudentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E52DD421B533950017BF90 /* StudentManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		0408CE412084449C003391D5 /* Closures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Closures; sourceTree = BUILT_PRODUCTS_DIR; };
 		0408CE442084449C003391D5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		22E52DD421B533950017BF90 /* StudentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				0408CE442084449C003391D5 /* main.swift */,
+				22E52DD421B533950017BF90 /* StudentManager.swift */,
 			);
 			path = Closures;
 			sourceTree = "<group>";
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					0408CE402084449C003391D5 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -120,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0408CE452084449C003391D5 /* main.swift in Sources */,
+				22E52DD521B533950017BF90 /* StudentManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +250,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N3PJA24574;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -255,7 +260,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N3PJA24574;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
