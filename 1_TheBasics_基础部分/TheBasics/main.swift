@@ -171,7 +171,7 @@ let forcedString: String = possibleString! // 需要感叹号来获取值
 //
 //这样仍然是可用的
 if assumedString != nil {
-    print(assumedString)
+    print(assumedString!)
 }
 // 输出 "some("An implicitly unwrapped optional string.")"
 

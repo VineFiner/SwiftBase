@@ -354,10 +354,38 @@ for customerProvider in customerProviders {
 // 打印 "Now serving Daniella!"
 
 
+// MARK: Class closure
 
+let tom = Student()
 
+// 赋值闭包
+tom.ageChangeCallBack = { age in
+    print("age:\(age)")
+}
+tom.nameChangeCallBack = { name -> Bool in
+    print("new name:\(name)")
+    if name == "Tom" {
+        return false
+    } else {
+        return true
+    }
+}
+tom.foreignerNameChangeCallBack = { first, last -> Bool in
+    print("first:\(first) last:\(last)")
+    return true
+}
+tom.foreignerNameChangeCallBack = { (first, last) -> Bool in
+    print("first:\(first) last:\(last)")
+    return true
+}
+// 调用闭包
+tom.entryAge(age: 15)
 
+let isChange = tom.changeName(name: "Jarry")
+print("is change name:\(isChange)")
 
+let foreigner = tom.foreignerChangeName(first: "Mr", last: "tom")
+print("is new :\(foreigner)")
 
 
 
