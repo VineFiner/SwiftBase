@@ -349,3 +349,18 @@ let airportNames = [String](airports.values)
 
 let testKeys =  Array(airports.keys)
 print(testKeys)
+
+// 分组
+let originalArray = [1, 2, 3, 4]
+let originalDic = ["a": "2", "b": "3", "c": "2"]
+let group = Dictionary(grouping: originalDic) { item in
+    item.value
+}
+print(group)
+print(group["2"] ?? "")
+
+// MARK: Advanced
+
+let operators = Advanced()
+operators.test()
+

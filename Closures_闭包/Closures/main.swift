@@ -156,6 +156,17 @@ let strings = numbers.map { (number: Int) -> String in
 
 print("转换结果是:", strings)
 
+/// 返回可选值
+let strings1 = numbers.compactMap { (number) -> Int? in
+    if number > 100 {
+        return number
+    } else {
+        return nil
+    }
+}
+print("转换结果是:", strings1)
+
+
 // MARK: 值捕获
 // 闭包可以在器被定义的航下文中捕获常量或变量，及时定义这些常量和变量的原作用域已经不存在，
 // 闭包仍然可以在闭包函数体内医用和修改这些值。
