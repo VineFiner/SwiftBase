@@ -400,3 +400,5 @@ if stackOfStrings2.isTop("tres") {
 //}
 //print([1260.0, 1200.0, 98.6, 37.0].average())
 // 打印 "648.9"
+
+ExtensionsWithAGenericWhereClause().test()

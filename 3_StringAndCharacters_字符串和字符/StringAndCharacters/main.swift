@@ -218,6 +218,11 @@ let beginning = greeting1[..<index1]
 // beginning 的值为 "Hello"
 print(beginning)
 
+// 这里取中间的一段字符
+let beginningRange = greeting1.index(greeting1.startIndex, offsetBy: 4)..<greeting1.index(greeting1.startIndex, offsetBy: 8)
+let beginingRangeSubStr = greeting1[beginningRange]
+print("这里是给定range:\(beginingRangeSubStr)")
+
 // 把结果转化为 String 以便长期存储。
 // 这里是为了更好的内存优化
 let newString = String(beginning)

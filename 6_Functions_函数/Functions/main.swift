@@ -232,6 +232,9 @@ func addTwoInts(_ a: Int, _ b: Int) -> Int {
 func multiplyTwoInts(_ a: Int, _ b: Int) -> Int {
     return a * b
 }
+func subtractTwoInts(meiosis a: Int, minuend b: Int) -> Int {
+    return a - b
+}
 // 上面两个函数属于同一种类型
 
 // () -> Void 类型
@@ -241,6 +244,12 @@ func printHelloWorld() {
 
 // 使用函数类型
 var mathFunction: (Int, Int) -> Int = addTwoInts(_:_:)
+
+// 使用函数类型
+var mathSubtractFunction: (_ a: Int, _ b:Int) -> Int = subtractTwoInts
+
+
+subtractTwoInts(meiosis: 1, minuend: 2)
 
 print("Result: \(mathFunction(2, 3))")
 // Prints "Result: 5"
