@@ -442,6 +442,44 @@ if #available(macOS 10.12, *) {
     
 }
 
+class Card {
+    var isFaceUp = false
+    var isMatched = false
+}
 
+struct Card1 {
+    var isFaceUp = false
+    var isMatched = false
+}
+struct Concentration {
+    var cards = [Card]()
+    var cards1 = [Card1]()
+    func changeCardFaceUp(index: Int) -> [Card] {
+        for (cardIndex, card) in cards.enumerated() {
+            if cardIndex == index {
+                card.isFaceUp = true
+            }
+        }
+        return cards
+    }
+    
+    mutating func changeCard1FaceUp(index: Int) -> [Card1] {
+        /* Error Cannot assign to property: 'card' is a 'let' constant
+        for (cardIndex, card) in cards1.enumerated() {
+            if cardIndex == index {
+                card.isFaceUp = true
+            }
+        }
+         */
+        for cardIndex in cards1.indices {
+            if cardIndex == index {
+                cards1[cardIndex].isFaceUp = true
+            }
+        }
+        return cards1
+    }
+}
 
-
+let add = Concentration.init(cards: [Card(), Card()])
+let result = add.changeCardFaceUp(index: 1)
+print("result:\(result.map { $0.isFaceUp })")
