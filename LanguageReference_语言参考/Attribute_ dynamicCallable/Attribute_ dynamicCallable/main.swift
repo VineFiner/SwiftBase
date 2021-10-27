@@ -8,7 +8,7 @@
 
 import Foundation
 
-// 动态可调用, 动态可写
+// 动态可写
 @dynamicCallable
 class TelephoneExchange {
     func dynamicallyCall(withArguments phoneNumber: [Int]) {
@@ -128,7 +128,14 @@ print("The width of someResolution is \(someVideoMode.resolution.width)")
 
 print("The height of someResolution is \(videoWrapper.resolution.height)")
 
+// 创建一个临时分辨率
 let tempResolution = Resolution()
+// 分辨率包装器
 let resolutionWrapper = PassthroughWrapper(value: tempResolution)
 print("temp:\(tempResolution.width)")
 print("The width of someResolution is \(resolutionWrapper.width)")
+
+// MARK: Example
+let app = App()
+try configure(app)
+try app.run()
